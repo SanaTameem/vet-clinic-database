@@ -105,7 +105,7 @@ SELECT vets.name, species.name FROM specializations FULL JOIN vets ON specializa
 SELECT animals.name FROM visits JOIN animals ON visits.animal_id = animals.id WHERE visits.vet_id = 3 AND visits.visit_date BETWEEN '2020-04-01' AND '2020-08-30';
 
 /*What animal has the most visits to vets?*/
-SELECT vets.name, MIN(visits.visit_date) AS first_visit_date FROM vets JOIN visits ON vets.id = visits.vet_id WHERE vets.name = 'Maisy Smith' GROUP BY vets.name;
+SELECT animals.name, COUNT(visits.visit_id) AS visit_count FROM visits JOIN animals ON visits.animal_id = animals.id GROUP BY animals.name ORDER BY visit_count DESC LIMIT 1;
 
 /*Who was Maisy Smith's first visit?*/
 SELECT animals.name AS animal_name, MIN(visits.visit_date) AS first_visit_date FROM visits JOIN animals ON visits.animal_id = animals.id JOIN vets ON visits.vet_id = vets.id WHERE vets.name = 'Maisy Smith' GROUP BY animals.name ORDER BY first_visit_date;
