@@ -20,6 +20,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [� Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -58,6 +59,14 @@ SQL
 ### Key Features <a name="key-features"></a>
 
 - **[Get info about animals]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link of the diagram](https://drawsql.app/teams/sana-tameem/diagrams/vet-clinic-diagram)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
